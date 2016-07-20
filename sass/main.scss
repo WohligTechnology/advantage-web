@@ -9,11 +9,15 @@
 $brand-primary: #0d9dff !default;
 $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
-$brand-danger:  #fc483f !default;
-$brand-info:    #000072 !default;
+$brand-danger: #fc483f !default;
+$brand-info: #000072 !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-body {
-  padding-top: 70px;
+// body {
+//   padding-top: 70px;
+// }
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
 }
 img.loading {
   text-align: center;
@@ -31,7 +35,8 @@ img.doneLoading {
 nav li:hover .dropdown-menu {
   display: block;
 }
-a, .btn {
+a,
+.btn {
   cursor: pointer;
   @include transition(all ease 300ms);
 }
@@ -51,5 +56,96 @@ a, .btn {
   @include box-shadow(none);
 }
 //bootstrap forms
+.full-image {
+  width: 100%;
+}
+.navbar-brand {
+  padding: 8px 15px;
+  img {
+    width: 165px;
+  }
+}
+.hamburger {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  .icon-bar {
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: #fff;
+    @include transition(all 400ms ease-in-out);
+  }
+  .top-bar {
+    @include transform(rotate(45deg));
+    position: absolute;
+    top: 7px !important;
+    @include transition(all 400ms ease-in-out);
+  }
+  .mid-bar {
+    opacity: 0;
+    position: absolute;
+    @include transition(all 400ms ease-in-out);
+  }
+  .down-bar {
+    @include transform(rotate(-45deg));
+    top: 7px !important;
+    position: absolute;
+    @include transition(all 400ms ease-in-out);
+  }
+}
+.navbar-default {
+  .navbar-toggle {
+    display: block;
+    border-color: transparent;
+    z-index: 111;
+    position: relative;
+    &:hover .icon-bar {
+      background-color: lighten(#fecc04,10%);
+    }
+    .icon-bar {
+      background-color: #fecc04;
+      border-radius: 5px;
+    }
+    &:focus,
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+.sidemenu {
+  ul {
+    li {
+      a {
+        padding: 2px 28px;
+        letter-spacing: 1px;
+        display: block;
+        font-size: 15px;
+      }
+    }
+  }
+}
+.menu-out {
+  // height: 310px;
+  @include transform(translateX(-300px));
+  @include transition(all 300ms linear);
+  position: absolute;
+  width: 300px;
+  z-index: 99;
+  left: 0;
+}
+.menu-in {
+  @include transform(translateX(0));
+  @include transition(all 300ms linear);
+  position: fixed;
+  width: 320px;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
 /* Start writing sass here */
 @import "fancybox-override";
