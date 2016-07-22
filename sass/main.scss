@@ -15,29 +15,29 @@ $brand-info: #000072 !default;
 //   padding-top: 70px;
 // }
 .navbar-default {
-    background-color: transparent;
-    border-color: transparent;
+  background-color: transparent;
+  border-color: transparent;
 }
 img.loading {
-    text-align: center;
-    opacity: 1;
-    width: 32px !important;
-    height: auto;
+  text-align: center;
+  opacity: 1;
+  width: 32px !important;
+  height: auto;
 }
 img {
-    opacity: 0;
-    @include transition(all 300ms ease);
+  opacity: 0;
+  @include transition(all 300ms ease);
 }
 img.doneLoading {
-    opacity: 1;
+  opacity: 1;
 }
 nav li:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 .btn,
 a {
-    cursor: pointer;
-    @include transition(all ease 300ms);
+  cursor: pointer;
+  @include transition(all ease 300ms);
 }
 //bootstrap forms
 .btn,
@@ -46,183 +46,183 @@ a {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
 .input-lg {
-    border-radius: 0;
-    @include box-shadow(none);
+  border-radius: 0;
+  @include box-shadow(none);
 }
 .form-control:focus {
-    border-color: $brand-primary;
-    outline: 0;
-    @include box-shadow(none);
+  border-color: $brand-primary;
+  outline: 0;
+  @include box-shadow(none);
 }
 //bootstrap forms
 .full-image {
-    width: 100%;
+  width: 100%;
 }
 .navbar-brand {
-    padding: 8px 15px;
-    img {
-        width: 165px;
-    }
+  padding: 8px 15px;
+  img {
+    width: 165px;
+  }
 }
 .hamburger {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  .icon-bar {
     width: 25px;
-    height: 25px;
-    display: inline-block;
-    position: relative;
-    z-index: 10;
-    cursor: pointer;
-    .icon-bar {
-        width: 25px;
-        height: 3px;
-        margin: 3px 0;
-        background-color: #fff;
-        @include transition(all 400ms ease-in-out);
-    }
-    .top-bar {
-        @include transform(rotate(45deg));
-        position: absolute;
-        top: 7px !important;
-        @include transition(all 400ms ease-in-out);
-    }
-    .mid-bar {
-        opacity: 0;
-        position: absolute;
-        @include transition(all 400ms ease-in-out);
-    }
-    .down-bar {
-        @include transform(rotate(-45deg));
-        top: 7px !important;
-        position: absolute;
-        @include transition(all 400ms ease-in-out);
-    }
+    height: 3px;
+    margin: 3px 0;
+    background-color: #fff;
+    @include transition(all 400ms ease-in-out);
+  }
+  .top-bar {
+    @include transform(rotate(45deg));
+    position: absolute;
+    top: 7px !important;
+    @include transition(all 400ms ease-in-out);
+  }
+  .mid-bar {
+    opacity: 0;
+    position: absolute;
+    @include transition(all 400ms ease-in-out);
+  }
+  .down-bar {
+    @include transform(rotate(-45deg));
+    top: 7px !important;
+    position: absolute;
+    @include transition(all 400ms ease-in-out);
+  }
 }
 .navbar-default {
-    .navbar-toggle {
-        display: block;
-        border-color: transparent;
-        z-index: 111;
-        position: relative;
-        &:hover .icon-bar {
-            background-color: lighten(#fecc04,10%);
-        }
-        .icon-bar {
-            background-color: #fecc04;
-            border-radius: 5px;
-        }
-        &:focus,
-        &:hover {
-            background-color: transparent;
-        }
+  .navbar-toggle {
+    display: block;
+    border-color: transparent;
+    z-index: 111;
+    position: relative;
+    &:hover .icon-bar {
+      background-color: lighten(#fecc04,10%);
     }
+    .icon-bar {
+      background-color: #fecc04;
+      border-radius: 5px;
+    }
+    &:focus,
+    &:hover {
+      background-color: transparent;
+    }
+  }
 }
 .sidemenu {
-    ul {
-        li {
-            a {
-                padding: 2px 28px;
-                letter-spacing: 1px;
-                display: block;
-                font-size: 15px;
-            }
-        }
+  ul {
+    li {
+      a {
+        padding: 2px 28px;
+        letter-spacing: 1px;
+        display: block;
+        font-size: 15px;
+      }
     }
+  }
 }
 .menu-common {
-    position: fixed;
-    width: 320px;
-    z-index: 99;
-    left: 0;
-    bottom: 0;
-    top: 130px;
+  position: fixed;
+  width: 320px;
+  z-index: 99;
+  left: 0;
+  bottom: 0;
+  top: 130px;
 }
 .menu-out {
-    @include transform(translateX(-300px));
-    @include transition(all 300ms linear);
+  @include transform(translateX(-300px));
+  @include transition(all 300ms linear);
 }
 .menu-in {
-    @include transform(translateX(0));
-    @include transition(all 300ms linear);
+  @include transform(translateX(0));
+  @include transition(all 300ms linear);
 }
 .media-img ul li {
-    height: 50px;
+  height: 50px;
 }
 .media-img ul li {
-    height: 50px;
-    margin: 0 10px;
-    img {
-        max-height: 100%;
-    }
+  height: 50px;
+  margin: 0 10px;
+  img {
+    max-height: 100%;
+  }
 }
 .image-holder {
-    height: 100%;
-    display: table;
-    vertical-align: middle;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
+  height: 100%;
+  text-align: center;
+  position: relative;
 }
 .center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .content-wrap h1 {
-    font-size: 56px;
-    color: #fff;
-    margin-bottom: 10px;
+  font-size: 56px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 .content-wrap .header_sub_heading {
-    display: inline-block;
-    font-weight: 300;
+  display: inline-block;
+  font-weight: 300;
 }
 .bg-default-text,
 .default-text {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #fff;
 }
 .content-wrap {
-    .search {
-        width: 686px;
-        margin-top: 37px;
-        margin-bottom: 3px;
-        display: inline-block;
-        height: 60px;
-        input {
-            height: 60px;
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-            position: relative;
-            width: 89%;
-            float: left;
-            outline: 0;
-        }
-        .search_btn {
-            height: 60px;
-            width: 11%;
-            float: left;
-            i {
-                font-size: 20px;
-            }
-        }
+  .search {
+    width: 686px;
+    margin-top: 37px;
+    margin-bottom: 3px;
+    display: inline-block;
+    height: 60px;
+    input {
+      height: 60px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      position: relative;
+      width: 89%;
+      float: left;
+      outline: 0;
     }
-    .popular_courses a {
-        color: #fff;
-        padding: 5px;
-        a + a {
-            border-right: 1px solid #fff;
-        }
+    .search_btn {
+      height: 60px;
+      width: 11%;
+      float: left;
+      i {
+        font-size: 20px;
+      }
     }
+  }
+  .popular_courses a {
+    color: #fff;
+    padding: 5px;
+    &:hover {
+      text-decoration: none;
+    }
+    a + a {
+      border-right: 1px solid #fff;
+    }
+  }
 }
 .col-md-16.col-xs-16.center-block.content-wrap {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    @include transform(translate(-50%,-50%));
-    width: 80%;
-    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%,-50%));
+  width: 80%;
+  text-align: center;
 }
 /* Start writing sass here */
 @import "fancybox-override";
