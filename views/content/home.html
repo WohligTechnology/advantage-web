@@ -1,13 +1,284 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="image-holder">
-      <img src="img/advantage.jpg" alt="" class="full-image">
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="image-holder">
+                <img src="img/advantage.jpg" alt="" class="full-image">
+                <div class="col-md-16 col-xs-16 center-block content-wrap">
+                    <h1>Get Certified. Get Ahead.</h1>
+                    <ul class="col-md-16 sub_head_home list-unstyled">
+                        <li>
+                            <p class="header_sub_heading bg-default-text">
+                                <span class="highlite_text">500,000+</span>
+                                Careers fast-tracked
+                            </p>
+                        </li>
+                        <li class="salary_hiked">
+                            <p class="header_sub_heading bg-default-text">
+                                <span class="highlite_text">$5Bn+</span>
+                                In salary hikes delivered
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="search">
+                        <form name="homepage-search-tag" class="home_search_form">
+                            <span class="search_icon_mobi"></span>
+                            <input type="text" autocomplete="off" class="form-control" name="tag" placeholder="Search from 400+ Courses" ng-model="searchTxtEntered">
+                            <button type="submit" class="btn btn-success search_btn">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <p class="popular_courses">
+                        <!--<mark>Jump to :</mark-->
+                        <a class="bg-small-meta-text" href="/project-management/pmp-certification-training">PMP<sup>®</sup>
+                            certification</a>
+                        <a class="bg-small-meta-text" href="/agile-and-scrum/agile-scrum-master-certification-training">Scrum master</a>
+                        <a class="bg-small-meta-text" href="/project-management/prince2-foundation-and-practitioner-certification-training">PRINCE2<sup>®
+                            </sup>
+                        </a>
+                        <!--a ng-click="gaHomePageControllerJs.gaFireHomePageJumpTo($event);" href="/it-service-management/itil-foundation-training">ITIL<sup>&reg;</sup></a>-->
+                        <a class="bg-small-meta-text" href="/digital-marketing/digital-marketing-certified-associate-training">Digital marketing
+                        </a>
+                        <a class="bg-small-meta-text" href="/big-data-and-analytics/data-scientist-certification-sas-r-excel-training">Data science</a>
+                        <a class="bg-small-meta-text" href="/big-data-and-analytics/big-data-and-hadoop-training">Big data
+                        </a>
+                        <a class="bg-small-meta-text" href="/virtualization-and-cloud-computing/salesforce-administrator-and-developer-training">Salesforce</a>
+                        <a class="bg-small-meta-text" href="/web-app-and-programming/android-app-development-training">Android
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- <flex-slider flex-slide="s in mySlides" prev-text="" next-text="">
+</section>
+<section class="container">
+    <div class="features">
+        <h4 class="text-center">Help People Grow
+            <br>
+            their careers. Every day!
+        </h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="features-made">
+                    <div class="img-holder text-center">
+                        <img src="img/experts.jpg" alt="" class="img-responsive"/>
+                    </div>
+                    <div class="description text-center">
+                        <h5>Learn from the experts</h5>
+                        <p>
+                            Industry thought-leaders to help you master new skills
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="features-made">
+                    <div class="img-holder text-center">
+                        <img src="img/experts.jpg" alt="" class="img-responsive"/>
+                    </div>
+                    <div class="description text-center">
+                        <h5>Learn from the experts</h5>
+                        <p>
+                            Industry thought-leaders to help you master new skills
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="features-made">
+                    <div class="img-holder text-center">
+                        <img src="img/experts.jpg" alt="" class="img-responsive"/>
+                    </div>
+                    <div class="description text-center">
+                        <h5>Learn from the experts</h5>
+                        <p>
+                            Industry thought-leaders to help you master new skills
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container">
+    <div class="master-program">
+        <div class="head-title">
+            <h4 class="text-center">
+                Master Program
+            </h4>
+            <p class="text-center">
+                Achieve your career gaol with industry recognised learning paths
+            </p>
+        </div>
+        <flex-slider class="carousel" flex-slide="program in programs track by $index" item-width="365" item-margin="20" animation="slide">
         <li>
-            <img ng-src="{{s}}">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="press-imgholder">
+                        <img ng-src="{{program.images}}" alt="" class="img-responsive">
+                    </div>
+                    <div class="text-capitalized">{{program.by}}</div>
+                    <div class="text-capitalized">{{program.subject}}</div>
+                    <div class="course">
+                        <p>
+                            {{program.name}}
+                        </p>
+                        <a href="#" class="pull-right">Explore</a>
+                        <p>
+                            {{program.status}}
+                        </p>
+                    </div>
+                </div>
+            </div>
         </li>
-    </flex-slider> -->
-
+    </flex-slider>
+    <div class="view-all">
+        <div class="btn-all text-center">
+            <button type="button" name="button" class="btn btn-primary">
+                View All
+            </button>
+        </div>
+    </div>
 </div>
+</section>
+<section class="container">
+<div class="careers">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="testimonails">
+                <h4 class="title">
+                    How edX Changes Lives and Improves Careers
+                </h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="description">
+                            <img src="img/experts.jpg" alt="" class="img-responsive"/>
+                            <p>
+                                Edx and ASU are creating new ways to get academics credit- flexibly and affordably
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="description">
+                            <img src="img/experts.jpg" alt="" class="img-responsive"/>
+                            <p>
+                                Edx and ASU are creating new ways to get academics credit- flexibly and affordably
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="description">
+                            <img src="img/experts.jpg" alt="" class="img-responsive"/>
+                            <p>
+                                Edx and ASU are creating new ways to get academics credit- flexibly and affordably
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="description">
+                            <img src="img/experts.jpg" alt="" class="img-responsive"/>
+                            <p>
+                                Edx and ASU are creating new ways to get academics credit- flexibly and affordably
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="readmore">
+                    <p class="text-right">
+                        <a href="#">More Stories</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="blog">
+                <h4>Latest Blog Post From edX</h4>
+                <div class="">
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="">
+                                <a href="#" class="pull-right">Read more</a>
+                                <p>
+                                    How to write an Effective CV- 5 steps From the Experts
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="">
+                                <a href="#" class="pull-right">Read more</a>
+                                <p>
+                                    How to write an Effective CV- 5 steps From the Experts
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="">
+                                <a href="#" class="pull-right">Read more</a>
+                                <p>
+                                    How to write an Effective CV- 5 steps From the Experts
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="">
+                                <a href="#" class="pull-right">Read more</a>
+                                <p>
+                                    How to write an Effective CV- 5 steps From the Experts
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="readmore">
+        <p class="text-right">
+            <a href="#">More Blogs</a>
+        </p>
+    </div>
+</div>
+<div class="subcription">
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                Get notified about new courses, events, community news &amp; more
+            </p>
+        </div>
+        <div class="col-md-5">
+            <div class="subscribe-input">
+                <input type="text" name="name" value="" placeholder="Enter your Email" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-1">
+            <button type="button" name="button" class="btn btn-primary">
+                Register
+            </button>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="container">
+<div class="media">
+    <h4 class="title">
+        In the Media
+    </h4>
+    <div class="media-img">
+        <ul class="list-inline">
+            <li>
+                <a href="#"><img src="img/harvard-logo.png" alt=""/></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/harvard-logo.png" alt=""/></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/harvard-logo.png" alt=""/></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/harvard-logo.png" alt=""/></a>
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
