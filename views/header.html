@@ -1,25 +1,21 @@
 <header ng-controller="headerctrl">
-  <div class="container">
-    <section class="color-black pd20">
+  <section class="color-black offer-section pd20">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="close">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </div>
+        <div class="close">
+          <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <div class="col-md-offset-3 col-md-6">
           <div class="row">
             <div class="col-md-7">
               <div class="take-charge">
-                <p>Take charge of your charge - Save up to 30%</p>
-              </div>
-              <div class="take-charge">
-                <p>Take charge of your charge - Save up to 30%</p>
+                <p>Take charge of your charge - Save up to <span>30%</span></p>
+                <p>and <span>#Getahead</span> and claim your scholarship now!</p>
               </div>
             </div>
             <div class="col-md-5">
               <div class="text-center">
-                <button class="btn">
+                <button class="btn btn-small">
                   Learn More
                 </button>
               </div>
@@ -27,30 +23,31 @@
           </div>
         </div>
       </div>
-    </section>
-  </div>
-
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="headerp">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed {{buttonpos}}" ng-click="getnav();">
-                <!-- <span class="sr-only">Toggle navigation</span> -->
-                <span class="icon-bar {{onebar}}"></span>
-                <span class="icon-bar {{secondbar}}"></span>
-                <span class="icon-bar {{thirdbar}}"></span>
-              </button>
+    </div>
+  </section>
+  <div class="nav-onhead">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="headerp">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed {{buttonpos}}" ng-click="getnav();">
+                  <!-- <span class="sr-only">Toggle navigation</span> -->
+                  <span class="icon-bar {{onebar}}"></span>
+                  <span class="icon-bar {{secondbar}}"></span>
+                  <span class="icon-bar {{thirdbar}}"></span>
+                </button>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="navbar-header">
-              <a class="navbar-brand mt12" href="#/home"><img src="img/logo.png" alt="logo" class="logo">
+            <div class="text-center logo-adv">
+              <a class="mt12" href="#/home"><img src="img/logo.png" alt="logo" class="logo">
               </a>
             </div>
           </div>
-          <div class="sidemenu menu-common {{getslide}}">
+          <!-- <div class="sidemenu menu-common {{getslide}}">
             <div class="nav-list">
               <div class="custscroll">
                 <h4 class="menu-title">Make</h4>
@@ -73,6 +70,9 @@
                 </ul>
               </div>
             </div>
-          </div>
-  </nav>
+          </div> -->
+        </div>
+      </div>
+    </nav>
+  </div>
 </header>
