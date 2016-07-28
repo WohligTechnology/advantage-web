@@ -1,0 +1,35 @@
+<section class="mt70 min-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="popup">
+                    <div class="plr20">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="pop-heading-bar bg-dark-blue close-popup">
+                                    <h3 class="text-uppercase text-center color-pink m-clear font-finestyle pd10">Forgot Password</h3>
+
+                                </div>
+                                <form action="" name="formLogin" class="pbt20">
+                                    <div class="relate form-group">
+                                        <label>
+                                            Please enter your Email Id
+                                        </label>
+                                        <input type="email" class="form-control" placeholder="Email Id" ng-model="email" name="email" required>
+                                        <div class="form-error" ng-show="formLogin.email.$touched && formLogin.email.$error.required">
+                                            Please enter your Email Id.
+                                        </div>
+                                    </div>
+                                    <div class="login mb10 mt10" ng-click="closeAllModals();">
+                                        <button class="btn btn-outline btn-full text-medium" ui-sref="home">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>

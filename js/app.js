@@ -14,10 +14,62 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
   $httpProvider.defaults.withCredentials = true;
   $stateProvider
     .state('home', {
-    url: "/",
-    templateUrl: "views/template.html",
-    controller: 'HomeCtrl'
-  });
+      url: "/",
+      templateUrl: "views/template.html",
+      controller: 'HomeCtrl'
+    })
+    .state('cart', {
+      url: "/cart",
+      templateUrl: "views/template.html",
+      controller: 'CartCtrl'
+    })
+    .state('checkout', {
+      url: "/checkout",
+      templateUrl: "views/template.html",
+      controller: 'CheckoutCtrl'
+    })
+    .state('checkoutdetail', {
+      url: "/checkoutdetail",
+      templateUrl: "views/template.html",
+      controller: 'CheckoutDetailCtrl'
+    })
+    .state('course', {
+      url: "/course",
+      templateUrl: "views/template.html",
+      controller: 'CourseCtrl'
+    })
+    .state('coursedetail', {
+      url: "/coursedetail",
+      templateUrl: "views/template.html",
+      controller: 'CourseDetailCtrl'
+    })
+    .state('login', {
+      url: "/login",
+      templateUrl: "views/template.html",
+      controller: 'LoginCtrl'
+    })
+    .state('forgot', {
+      url: "/forgot",
+      templateUrl: "views/template.html",
+      controller: 'ForgotCtrl'
+    })
+    .state('forgot-password', {
+      url: "/forgot-password",
+      templateUrl: "views/template.html",
+      controller: 'ForgotPasswordCtrl'
+    })
+    .state('signup', {
+      url: "/signup",
+      templateUrl: "views/template.html",
+      controller: 'SignupCtrl'
+    })
+    .state('search', {
+      url: "/search",
+      templateUrl: "views/template.html",
+      controller: 'SearchCtrl'
+    })
+
+  ;
   $urlRouterProvider.otherwise("/");
   $locationProvider.html5Mode(isproduction);
 });
@@ -44,32 +96,32 @@ firstapp.directive('img', function($compile, $parse) {
 });
 
 firstapp.directive('fancyboxBox', function($document) {
-    return {
-        restrict: 'EA',
-        replace: false,
-        link: function(scope, element, attr) {
-            var $element = $(element);
-            var target;
-            if (attr.rel) {
-               target = $("[rel='" + attr.rel + "']");
-            } else {
-                target = element;
-            }
+  return {
+    restrict: 'EA',
+    replace: false,
+    link: function(scope, element, attr) {
+      var $element = $(element);
+      var target;
+      if (attr.rel) {
+        target = $("[rel='" + attr.rel + "']");
+      } else {
+        target = element;
+      }
 
-            target.fancybox({
-                openEffect: 'fade',
-                closeEffect: 'fade',
-                closeBtn: true,
-                helpers: {
-                    media: {}
-                }
-            });
+      target.fancybox({
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        closeBtn: true,
+        helpers: {
+          media: {}
         }
-    };
+      });
+    }
+  };
 });
 
 
-firstapp.config(function ($translateProvider) {
+firstapp.config(function($translateProvider) {
   $translateProvider.translations('en', LanguageEnglish);
   $translateProvider.translations('hi', LanguageHindi);
   $translateProvider.preferredLanguage('en');
