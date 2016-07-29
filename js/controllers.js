@@ -68,21 +68,21 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       date: "04 May 2016",
       duration: "07"
     }];
-
-    $scope.date = function() {
-      $uibModal.open({
-        animation: true,
-        templateUrl: "views/modal/changedate.html",
-        controller: "CartCtrl"
-      })
-    };
-    $scope.remove = function() {
-      $uibModal.open({
-        animation: true,
-        templateUrl: "views/modal/removeitem.html",
-        controller: "CartCtrl"
-      })
-    };
+    //
+    // $scope.date = function() {
+    //   $uibModal.open({
+    //     animation: true,
+    //     templateUrl: "views/modal/changedate.html",
+    //     controller: "CartCtrl"
+    //   })
+    // };
+    // $scope.remove = function() {
+    //   $uibModal.open({
+    //     animation: true,
+    //     templateUrl: "views/modal/removeitem.html",
+    //     controller: "CartCtrl"
+    //   })
+    // };
 
   })
   .controller('CheckoutCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -166,6 +166,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.thirdbar = "thirdbar";
         $scope.buttonpos = "buttonpos";
       }
+    };
+    $scope.isActive = false;
+    $scope.activeButton = function() {
+      $scope.isActive = !$scope.isActive;
     };
   })
   .controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {

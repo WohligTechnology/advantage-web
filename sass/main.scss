@@ -167,6 +167,10 @@ a {
   }
 }
 
+.text-right {
+  text-align: right;
+}
+
 .sidemenu {
   ul {
     li {
@@ -182,16 +186,46 @@ a {
 
 .menu-common {
   position: fixed;
-  width: 320px;
-  z-index: 99;
+  width: 280px;
+  z-index: 999;
   left: 0;
   bottom: 0;
-  top: 130px;
+  top: 0;
+  background: lighten($brand-primary, 10%);
+  color: #fff;
+  padding-top: 20px;
+
+  .close {
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 0 0 #fff;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    margin: -16px 0;
+    padding: 0 15px;
+    @include transition(all ease 300ms);
+
+    &:hover {
+      color: darken(#fff, 5%);
+    }
+  }
 }
 
 .menu-out {
   @include transform(translateX(-300px));
   @include transition(all 300ms linear);
+}
+
+.custscroll ul li a {
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid;
+
+  &:hover {
+    color: darken(#fff, 5%);
+  }
 }
 
 .menu-in {
@@ -440,6 +474,7 @@ a {
 
       .flex-prev {
         left: -70px;
+        z-index: 0;
       }
     }
 
@@ -601,7 +636,7 @@ footer {
 
   .bg-small-meta-text {
     color: #ccc;
-    width: 100%;
+    width: 175px;
     margin: 2px 0;
     text-align: left;
 
@@ -682,7 +717,9 @@ footer {
 }
 
 .order-detail-heading {
-  font-size: 18px;
+  h4 {
+    font-size: 18px;
+  }
 }
 
 .order-prd-detail {
@@ -875,6 +912,45 @@ footer {
 
 .plr20 {
   padding: 0 20px;
+}
+
+.preview-bar {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+
+  .img-holder-related {
+    height: 50px;
+    margin: 10px 0;
+
+    img {
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .box-holder {
+    height: 50px;
+    margin-top: 20px;
+
+    .box {
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      width: 50px;
+      height: 25px;
+    }
+  }
+
+  .mtb10 {
+    margin: 10px 0;
+  }
+}
+
+.offer-section {
+  @include transition(all ease 300ms);
+
+  &.active {
+    margin-top: -75px;
+  }
 }
 /* Start writing sass here */
 @import "fancybox-override";
